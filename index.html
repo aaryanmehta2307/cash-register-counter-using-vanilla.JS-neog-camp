@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h2 class="heading">Cash Register</h2>
+    <p class="txt">Enter the bill amount and paid amount</p>
+    <label class="labeltxt" for="billamount">Bill amount:</label>
+    <input class="inputarea" id="billamount" type="text"/>
+
+    <label class="labeltxt" for="cash-give">Cash given:</label>
+    <input class="inputarea" type="text" id="cash-give"/>
+    
+    <button class="button" id="btn">Check and Calculate </button>
+    <p class="msg" id="error-message"></p>
+    <table>
+    <caption class="returntxt">Return Change</caption> 
+    <tr class="table-rows">
+        <th style="display: block;padding: 1rem;">No of Notes
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+        </th>
+
+    </tr>   
+    <tr class="next-row"></tr>
+    <th>Notes
+        <td class="note" id="notes">2000</td>
+        <td class="note" id="notes">0500</td>
+        <td class="note" id="notes">0100</td>
+        <td class="note" id="notes">0050</td>
+        <td class="note" id="notes">0020</td>
+        <td class="note" id="notes">0010</td>
+        <td class="note" id="notes">0005</td>
+        <td class="note" id="notes">0001</td>
+    </th>
+</table>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
