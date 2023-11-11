@@ -19,11 +19,11 @@ btn.addEventListener("click",function(){
         showmessage("Do you want to wash plates?")
        }
     }
-    else if(billAmount.value<0){
+    else if(billAmount.value<0 ){
      showmessage("Invalid bill amount")
      console.log(billAmount.value);
     }
-    else if(typeof billAmount.value==="string"){
+    else if(typeof billAmount.value==="string" || typeof cashGiven.value=="string"){
 showmessage("Input any number not any character");
     }
 });
